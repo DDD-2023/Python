@@ -10,10 +10,10 @@ def squ(lst, x):
     ans_lst = []
     while i < (len(lst)):
         if(int(lst[i]) ** 2) > x:
-            ans_lst.insert(i, lst[i])
+            ans_lst.append(lst[i])
         i += 1
     return ans_lst
 
-lst_dig = [1, 2, 3, 4, 5, 6, 7]
+lst_dig = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 9, 5]
 N = 10
 print('Ответ: ', squ(lst_dig, N))
