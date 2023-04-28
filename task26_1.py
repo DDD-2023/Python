@@ -10,7 +10,7 @@ def squ(lst, x):
     ans_lst = []
     while i < (len(lst)):
         if(int(lst[i]) ** 2) > x:
-            ans_lst.append(lst[i])
+            ans_lst.append(lst[i]**2)
         i += 1
     return ans_lst
 
