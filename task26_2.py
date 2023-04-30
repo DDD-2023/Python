@@ -6,8 +6,11 @@
 #  2) Воспользуйтесь функцией filter, для чего создайте функцию проверки числа больше x
 #
 
-lst_dig = [1, 2, 3, 4, 5, 6, 7]
+lst_dig = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 9, 5]
 N = 10
 
-ans_lst = list(filter(lambda x: (x **2) > N, lst_dig))
-print('Ответ: ', ans_lst)
+# ans_filter = list(filter(lambda x: (x ** 2) > N, lst_dig))
+# ans_lst = list(map(lambda x: (x ** 2), ans_filter))
+# print('Ответ: ', ans_lst)
+
+print('Ответ: ', list(map(lambda x: (x ** 2), list(filter(lambda x: (x ** 2) > N, lst_dig)))))
