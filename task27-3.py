@@ -5,13 +5,13 @@
 
 
 # str_in = 'ABCdef123'#.lower()
-str_in = input('Введите строку: ').lower()
+str_in = input('Введите строку: ')#.lower()
 
 # str_end = ''.join(list(reversed(list(map(lambda x: str_lower[x], range(len(str_lower)))))))# Работает
 # print(str_end)@ Работает
 
 # str_end = ''.join(list(reversed(list(map(lambda x: str_lower[x], range(len(str_lower)))))))# Тест
 
-lam_fun = lambda x: print(''.join(list(reversed(list(x.lower())))))
+lam_fun = lambda x: (''.join(list(reversed(list(x.lower())))))
 
-lam_fun(str_in)
+print(lam_fun(str_in))
